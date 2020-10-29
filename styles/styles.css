@@ -1,0 +1,36 @@
+/* to keep image in the box START */
+*{
+    box-sizing: border-box;
+}
+#logo img{
+    height: 100%;
+    width: 100%;
+}
+#menu-bar{
+    position: relative;
+}
+#side-banner img{
+    height: 100%;
+    width: 100%;
+}
+/* to keep image in the box END */
+.flex {
+    display: flex;
+}
+
+.box{
+    /* for check boxes  */
+    background:lightgray;
+    border: red 2px solid; 
+    margin:15px;
+    padding: 10px;
+    text-align: left;
+    border-radius: 20px;
+    width: 250px;
+    padding: 2em 1em;
+    margin: 5px;
+}
+
+#side-banner{
+    height: 52vh;
+}

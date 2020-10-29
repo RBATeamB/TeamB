@@ -7,13 +7,24 @@
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="shortcut icon" href="/src/favicon-32x32.png" type="image/x-icon">
 <body>
-    <div id="logo">
-        <img src="src/bravo_logo.png" alt="logo">
+    <div id="top" class="flex">
+        <div id="logo" class="box">
+            <img src="src/bravo_logo.png" alt="logo">
+        </div>
+        <div id="menu-bar" class="box">
+            <label for="about">About</label>
+            <label for="contact">Let's Talk</label>
+        </div>
     </div>
-    <div id="header">
-        <h1>Welcome to Software Engineering Team B - Bravo</h1>
+    <!-- with reference https://codeburst.io/css-grid-vs-flexbox-building-simple-layouts-43e569a66f0a -->
+    <div class="flex">
+        <div id="header" class="content">
+            <h1 class="box">Welcome to Software Engineering Team B - Bravo</h1>
+        </div>
+        <div id="side-banner">
+            <img class="box"  src="https://source.unsplash.com/3k9PGKWt7ik" alt="banner"> <!--https://unsplash.com/photos/3k9PGKWt7ik-->
+        </div>
     </div>
-    
 </body>
 
 </html>
