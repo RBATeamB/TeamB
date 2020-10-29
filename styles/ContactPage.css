@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    background-image: url(https://images.unsplash.com/photo-1566125882500-87e10f726cdc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 200px;
+    align-items: stretch;
+}
+
+#header {
+    border-top: black solid 1px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+#mainform {
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 20px;
+    position: absolute;
+    top: 9%;
+    right: 5%;
+    left: 40%;
+    bottom: 10%;
+}
+
+input[type=text], [type=email], textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid black;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    background-color:transparent;
+    resize: vertical;
+}
+
+input[type=submit] {
+    color: white;
+    background-color: rgb(42, 53, 53);
+    height: 50px;
+    width: 550px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: center;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(83, 102, 52);
+}
+
+#privacy {
+    text-align: left;
+}
+
+#submit {
+    position: relative;
+    margin: 1%;
+}
+
+footer {
+    position: fixed;
+    bottom: 1px;
+    left: 20px;
+    font-size: small;
+}
