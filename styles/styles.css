@@ -1,36 +1,70 @@
-/* to keep image in the box START */
-*{
-    box-sizing: border-box;
+footer, header {
+    height: 26vh;
 }
-#logo img{
-    height: 100%;
-    width: 100%;
-}
-#menu-bar{
-    position: relative;
-}
-#side-banner img{
-    height: 100%;
-    width: 100%;
-}
-/* to keep image in the box END */
-.flex {
-    display: flex;
-}
-
-.box{
-    /* for check boxes  */
-    background:lightgray;
-    border: red 2px solid; 
-    margin:15px;
-    padding: 10px;
-    text-align: left;
-    border-radius: 20px;
-    width: 250px;
+.box {
+    color: darkred;
+    background: rgb(233, 233, 233);
+    text-align: center;
     padding: 2em 1em;
     margin: 5px;
 }
-
-#side-banner{
+.mainContainer {
+    height: 26vh;
+}
+.flex {
+    display: flex;
+}
+.contentContainer {
+    flex: 2;
+}
+sidebar {
+    flex: 1;
     height: 52vh;
+}
+.flex > main, section {
+    flex: 1;
+}
+ /* menubar  */
+ /* Add a black background color to the top navigation */
+.topnav {
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+ /* Logo container */
+ .topnav img{
+    height: 26vh;
+}
+
+
+/* Side banner container  */
+ #side-banner img{
+    background-image: url();
 }

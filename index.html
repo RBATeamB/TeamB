@@ -7,24 +7,29 @@
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="shortcut icon" href="/src/favicon-32x32.png" type="image/x-icon">
 <body>
-    <div id="top" class="flex">
-        <div id="logo" class="box">
-            <img src="src/bravo_logo.png" alt="logo">
+    <header class="topnav">
+        <img src="src/bravo_logo.png" alt="logo">
+        <nav id="menu-bar" class="topnav-right">
+            <a href="/about.html" class="menu">About</label>
+            <a href="/contact.html" class="menu">Let's Talk</label>
+        </nav>
+    </header>
+    <div class="flex Container">
+        <div class="contentContainer">
+            <div class="mainContainer flex">
+                <main class="box">Main Content</main>
+                <section class="box">Main Content</section>
+            </div>
+            <footer class="box">Footer Content</footer>
         </div>
-        <div id="menu-bar" class="box">
-            <label for="about">About</label>
-            <label for="contact">Let's Talk</label>
-        </div>
+        <sidebar class="box">
+            <div id="side-banner">
+                <img class="topnav-right"  src="https://source.unsplash.com/3k9PGKWt7ik" alt="banner">
+            </div>
+        </sidebar>
     </div>
-    <!-- with reference https://codeburst.io/css-grid-vs-flexbox-building-simple-layouts-43e569a66f0a -->
-    <div class="flex">
-        <div id="header" class="content">
-            <h1 class="box">Welcome to Software Engineering Team B - Bravo</h1>
-        </div>
-        <div id="side-banner">
-            <img class="box"  src="https://source.unsplash.com/3k9PGKWt7ik" alt="banner"> <!--https://unsplash.com/photos/3k9PGKWt7ik-->
-        </div>
-    </div>
+
+    
 </body>
 
 </html>
