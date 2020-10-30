@@ -1,7 +1,15 @@
 /* to keep image in the box START */
 *{
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
 }
+
+html, body{
+    height: 100%;
+}
+
 #logo img{
     height: 100%;
     width: 100%;
@@ -17,6 +25,8 @@
     text-decoration: none;
     color: black;
     margin: 0px 20px;
+    justify-content: space-around;
+
 }
 #side-banner img{
     height: 100%;
@@ -42,4 +52,52 @@
 
 #side-banner{
     height: 52vh;
+}
+
+
+/* CSS FOR ABOUT PAGE */
+
+#about{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.group-box-1{
+    position: relative;
+    left: 60px;
+}
+
+.group-box-2{
+    position: relative;
+    top: 30px;
+}
+
+#boxes{
+    border: 2px solid grey;
+    margin: 25px 25px;
+    width: 200px;
+    height: 210px;
+}
+
+.about-text{
+    position: relative;
+    right: 60px;
+    margin: 0px 50px 0px 50px;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 300;
+    color: #788090;
+}
+
+.about-text h3{
+    font-size: 96px;
+    line-height: 96px;
+    font-weight: 800;
+    color: #000000;
 }
