@@ -7,7 +7,16 @@
     width: 100%;
 }
 #menu-bar{
-    position: relative;
+    position: absolute; /*using absolute and right to keep it in the upper right corner*/
+    right: 20px;
+    padding: 0px;
+}
+
+#menu-bar a{
+    /*to get plain black texts for about and contact links*/
+    text-decoration: none;
+    color: black;
+    margin: 0px 20px;
 }
 #side-banner img{
     height: 100%;
