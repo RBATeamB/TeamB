@@ -7,24 +7,19 @@
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="shortcut icon" href="/src/favicon-32x32.png" type="image/x-icon">
 <body>
-    <div id="top" class="flex">
-        <div id="logo" class="box">
-            <img src="src/bravo_logo.png" alt="logo">
-        </div>
-        <div id="menu-bar" class="box">
-            <a href="about.html" id="about">ABOUT</a> <!--changed tags from label to a-->
-            <a href="contact.html" id="contact">LET'S TALK</a> <!--changed tags from label to a-->
-        </div>
-    </div>
-    <!-- with reference https://codeburst.io/css-grid-vs-flexbox-building-simple-layouts-43e569a66f0a -->
+    <header class="box"> 
+        <img src="/src/bravo_logo.png" alt="teamBravo">
+        <a href="/about.html">ABOUT</a> <!--changed tags from label to a-->
+        <a href="/contact.html">LET'S TALK</a> <!--changed tags from label to a-->
+    </header>
     <div class="flex">
-        <div id="header" class="content">
-            <h1 class="box">Welcome to Software Engineering Team B - Bravo</h1>
-        </div>
-        <div id="side-banner">
-            <img class="box"  src="https://source.unsplash.com/3k9PGKWt7ik" alt="banner"> <!--https://unsplash.com/photos/3k9PGKWt7ik-->
-        </div>
+        <main id="content" class="box">
+            <h1>Team B ></h1>
+            <h2> always in Beta</h2>
+        </main>
+        <section id="sidebar" class="box">
+            <img src="https://source.unsplash.com/3k9PGKWt7ik/480x300" alt="banner">
+        </section>
     </div>
-</body>
-
+</body> 
 </html>
