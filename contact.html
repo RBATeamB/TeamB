@@ -17,25 +17,39 @@
         </div>
 
         <div>
-        <form action="message.php"></form>
+        <form action="message.php">
+            <div class="tooltip">
             <label for="name"></label>
-            <input type="text" id="name" name="name" placeholder="Your Name">
-
+            <input type="text" id="name" name="name"  placeholder="Your Name">
+            <!--adding tooltip when hover-->
+            <span class="tooltiptext">Full Name</span>
+            </div>
+            
+            <div class="tooltip">
             <label for="email"></label>
-            <input type="email" id="email" name="email" placeholder="Your Email">
-
+            <input type="email" id="email" name="email"  placeholder="Your Email">
+            <!--adding tooltip when hover-->
+            <span class="tooltiptext">Email Address</span>
+            </div>
+            
+            <div class="tooltip">
             <label for="company"></label>
-            <input type="text" id="company" name="company" placeholder="Your Company">
+            <input type="text" id="company" name="company"  placeholder="Your Company">
+            <!--adding tooltip when hover-->
+            <span class="tooltiptext">Company Name</span>
+            </div>
 
+<!--change here in CSS style -->
             <label for="feedback"></label>
-            <textarea id="feedback" name="feedback" placeholder="Lets us know what you're looking for and we can help." style="height:100px"></textarea>
+            <textarea id="feedback" name="feedback"  placeholder="Lets us know what you're looking for and we can help."></textarea>
         </form>
         </div>
 
+<!--removing underline of links in CSS-->
         <div id="privacy">
-        <p>Please read our <a href="https://redbeatacademy.com">Privacy Policy</a> to see how we use your personal information.</p>
+        <p>Please read our <a id="link" href="https://redbeatacademy.com">Privacy Policy</a> to see how we use your personal information.</p>
         </div>
-
+        
         <div id="submit">
         <input type="submit" onclick="alert('Thank you for your feedback!')" value="Send Message">
         </div>
