@@ -20,6 +20,7 @@ img {
     text-align: left;
     margin: 5px;
 }
+
 header img{
     height: 8vh;
 } 
@@ -39,8 +40,16 @@ header a:hover {
     flex: 1;
     background: rgb(233, 233, 233);
     height: 80vh; /*to fill up the space*/
+    min-height: 600px; /*limiting min height to keep text in box*/
+    min-width: 300px; /*limiting min width to keep text in box*/
     padding:20px;
 }
 #sidebar{
     flex: 1;
+}
+
+#sidebar img{
+    min-height: 600px; /*same min height as #content*/
+    min-width: 300px; /*same min width as #content*/
+    height: 80vh; /*same height as #content*/
 }
