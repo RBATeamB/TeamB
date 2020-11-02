@@ -1,10 +1,44 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
-body{
-    font-family: 'Fira Sans'; /*font from figma mockup*/
-    font-size: 2rem;
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 92px;
+    top: 0;
+}
+
+a.page{
+    color: #717f91;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 10px;
+}
+
+a.page:hover{
+    background-color: #F65341;
+    color: #ffffff;
+}
+
+.nav-pages{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 img {
@@ -18,31 +52,42 @@ img {
     /* color: darkred;
     background: rgb(233, 233, 233); */
     text-align: left;
-    margin: 5px;
+    margin: 30px 0px;
 }
 
-header img{
-    height: 8vh;
-} 
-header a{
-    float: right;
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-header a:hover {
-    background-color: #000000;
-    color: #ffffff;
-}
 #content{
     flex: 1;
-    background: rgb(233, 233, 233);
-    height: 80vh; /*to fill up the space*/
+    height: 100vh; /*to fill up the space*/
     min-height: 600px; /*limiting min height to keep text in box*/
     min-width: 300px; /*limiting min width to keep text in box*/
-    padding:20px;
+    /* padding:20px; */
+    font-size: 2em;
+    text-decoration: none;
+    position: relative;
+    left: 130px;
+}
+
+ul > li{
+    list-style: none;
+}
+
+.heading{
+    color: #252522;
+}
+
+.heading span{
+    line-height: 0;
+    position: relative;
+    top: -25px;
+    left: 20px;
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+.subheading{
+    color: #788090;
+    line-height: 36px;
+    font-weight: 300;
 }
 #sidebar{
     flex: 1;
@@ -52,4 +97,85 @@ header a:hover {
     min-height: 600px; /*same min height as #content*/
     min-width: 300px; /*same min width as #content*/
     height: 80vh; /*same height as #content*/
+}
+
+
+/* CSS FOR ABOUT PAGE */
+
+#about{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#boxes{
+    display: block;
+    overflow: auto;
+    margin-top: 0px;
+}
+
+.group-box-1{
+    position: relative;
+    left: 150px;
+    align-items: center;
+    margin: 0px;
+}
+
+.group-box-2{
+    position: relative;
+    /* top: 50px; */
+    left: 170px;
+}
+
+#boxes>img{
+    max-width: 100%;
+    opacity: 35%;
+    transition: all .5s;
+}
+
+#boxes>img:hover {
+    transform: rotate(-5deg) scale(1.1);
+    opacity: 100%;
+}
+
+h2{
+    color: #252522;
+    opacity: 45%;
+    font-size: 1.7em;
+    z-index: -1;
+    position: relative;
+    top: 215px;
+    left: 5px;
+}
+
+.name-right{
+    color: #252522;
+    opacity: 45%;
+    font-size: 1.7em;
+    z-index: 1;
+    position: relative;
+    top: 215px;
+    left: 120px;
+}
+
+.about-text{
+    position: relative;
+    margin: 0px 100px;
+    font-size: 24px;
+    left: 140px;
+    line-height: 36px;
+    font-weight: 300;
+    color: #788090;
+}
+
+.about-text h3{
+    font-size: 96px;
+    line-height: 96px;
+    font-weight: 800;
+    color: #252525;
 }
