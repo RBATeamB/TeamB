@@ -301,7 +301,7 @@ input[type=submit]:hover {
     text-align: left;
 } 
 /* removing underline of links */
-/* #link   {
+ #link   {
     text-decoration: none;
 }
 
@@ -315,4 +315,4 @@ footer {
     bottom: 1px;
     left: 20px;
     font-size: small;
-} */
+} 
