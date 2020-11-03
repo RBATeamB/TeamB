@@ -181,7 +181,7 @@ h2{
 }
  /* CSS Contact Pages  */
 
-/* #contact {
+ #contact {
     background-color: whitesmoke;
     background-image: url(https://images.unsplash.com/photo-1566125882500-87e10f726cdc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80);
     background-repeat: no-repeat;
@@ -197,25 +197,25 @@ h2{
     align-items: stretch;
 }
  
-#header {
+#contactHeader {
     border-top: black solid 1px;
-    position: absolute;
+    /* position: absolute;
     top: 10%;
-    left: 10%;
+     left: 10%; */  /*For adjust to bottom pages */
 }
 
-#mainform {
+#contactMainform {
     border-radius: 5px;
     background-color: transparent;
     padding: 20px;
-    position: absolute;
+    /* position: absolute;
     top: 9%;
     right: 5%;
     left: 40%;
-    bottom: 10%;
+    bottom: 10%; */ /*For adjust to bottom pages */
 }
 
-input[type=text], [type=email], {
+#contact input[type=text], [type=email], {
     width: 80%;
     padding: 12px;
     border: 1px solid black;
@@ -229,11 +229,11 @@ input[type=text], [type=email], {
     resize: vertical;
 }
 
-.tooltip {
+#contact .tooltip {
     position: relative;
 }
 
-.tooltip .tooltiptext {
+#contact .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: #555;
@@ -250,7 +250,7 @@ input[type=text], [type=email], {
     transition: opacity 0.3s;
 }
 
-.tooltip .tooltiptext::after {
+#contact .tooltip .tooltiptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -261,14 +261,14 @@ input[type=text], [type=email], {
     border-color: #555 transparent transparent transparent;
 }
 
-.tooltip:hover .tooltiptext {
+#contact .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
     transition: 1s;
 }
 
 /* adding box as per design */
-/* #feedback   {
+#contact #feedback   {
     width: 80%;
     padding: 12px;
     height: 100px;
@@ -299,7 +299,7 @@ input[type=submit]:hover {
 
 #privacy {
     text-align: left;
-} */
+} 
 /* removing underline of links */
 /* #link   {
     text-decoration: none;
