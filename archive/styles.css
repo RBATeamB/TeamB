@@ -1,0 +1,148 @@
+<<<<<<< HEAD
+=======
+/* to keep image in the box START */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+html, body{
+    height: 100%;
+}
+
+#logo img{
+    height: 100%;
+    width: 100%;
+}
+#menu-bar{
+    position: absolute; /*using absolute and right to keep it in the upper right corner*/
+    right: 20px;
+    padding: 0px;
+}
+
+#menu-bar a{
+    /*to get plain black texts for about and contact links*/
+    text-decoration: none;
+    color: black;
+    margin: 0px 20px;
+    justify-content: space-around;
+
+}
+#side-banner img{
+    height: 100%;
+    width: 100%;
+}
+/* to keep image in the box END */
+.flex {
+    display: flex;
+}
+
+.box{
+    /* for check boxes  */
+    background:lightgray;
+    border: red 2px solid; 
+    margin:15px;
+    padding: 10px;
+    text-align: left;
+    border-radius: 20px;
+    width: 250px;
+    padding: 2em 1em;
+    margin: 5px;
+}
+
+#side-banner{
+    height: 52vh;
+}
+<<<<<<< HEAD
+>>>>>>> 2beb7f80f5f60156e13078344ae99ba15a2df5f3
+=======
+
+
+/* CSS FOR ABOUT PAGE */
+
+#about{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#boxes{
+    display: block;
+    overflow: auto;
+    margin-top: 0px;
+}
+
+.group-box-1{
+    position: relative;
+    left: 150px;
+    align-items: center;
+    margin: 0px;
+}
+
+.group-box-2{
+    position: relative;
+    /* top: 50px; */
+    left: 170px;
+}
+
+img{
+    max-width: 100%;
+    opacity: 35%;
+    transition: all .5s;
+}
+
+img:hover {
+    transform: rotate(-5deg) scale(1.1);
+    opacity: 100%;
+}
+
+h2{
+    color: #252522;
+    opacity: 45%;
+    font-size: 1.7em;
+    z-index: -1;
+    position: relative;
+    top: 215px;
+    left: 5px;
+}
+
+.name-right{
+    color: #252522;
+    opacity: 45%;
+    font-size: 1.7em;
+    z-index: 1;
+    position: relative;
+    top: 215px;
+    left: 120px;
+}
+
+.about-text{
+    position: relative;
+    margin: 0px 100px;
+    font-size: 24px;
+    left: 140px;
+    line-height: 36px;
+    font-weight: 300;
+    color: #788090;
+}
+
+.about-text h3{
+    font-size: 96px;
+    line-height: 96px;
+    font-weight: 800;
+<<<<<<< HEAD
+    color: #000000;
+}
+>>>>>>> 558205ca06e30ef044f467396b5fc914ab984e40
+=======
+    color: #252525;
+}
+>>>>>>> ae78a6f9649adcd1ebb3ec79c3807316236d182a

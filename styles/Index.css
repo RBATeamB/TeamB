@@ -4,45 +4,47 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
-.container{
-    width: 1140px;
-    margin: 0 auto;
-    position: sticky;
-    top: 0;
+.redB{
+    display: inline-block;
 }
 
 nav{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 92px;
     justify-content: space-between;
     align-items: center;
-    height: 92px;
-    top: 0;
+    background-color: #fff;
+
 }
 
-a.page{
+.nav-pages{
+    display: flex;
+}
+
+.page a{
+    display: inline-block;
+    padding: 10px 15px;
     color: #717f91;
-    font-size: 20px;
-    text-decoration: none;
     font-weight: 400;
-    padding: 10px;
+    font-size: 20px;
 }
 
-a.page:hover{
+.page a:hover{
     background-color: #F65341;
     color: #ffffff;
 }
 
-.nav-pages{
-    width: 20%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-img {
-    max-width: 100%;
+.logo img {
+    vertical-align: middle;
 }
 
 .flex {
@@ -64,7 +66,7 @@ img {
     font-size: 2em;
     text-decoration: none;
     position: relative;
-    left: 130px;
+    left: 400px;
 }
 
 ul > li{
@@ -184,28 +186,43 @@ h2{
  #contact {
     height: 100vh;
     width: 100%;
-    background-color: whitesmoke;
-    background-image: url(https://images.unsplash.com/photo-1566125882500-87e10f726cdc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80);
+    position: relative;
+    /* background-image: url(https://images.unsplash.com/photo-1566125882500-87e10f726cdc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80); */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
     display: flex;
     flex-direction: row;
     flex: 1 0 200px;
     align-items: stretch;
+    top: 92px;
 }
  
 #contactHeader {
     border-top: black solid 1px;
+    width: auto;
     position: relative;
     top: 15%;
-    left: 10%;  
+    left: 10%; 
+    padding-top: 15px;
+    font-size: 1rem;
+    letter-spacing: 0rem;
+    line-height: 1; 
 }
 
+#contactFormheader{
+    line-height: 80px;
+    max-width: 700px;
+    letter-spacing: -.25rem;
+    font-size: 44px;
+}
+
+form{
+    padding-top: 50px;
+}
 #contactMainform {
     border-radius: 5px;
     background-color: transparent;
@@ -217,7 +234,7 @@ h2{
     bottom: 10%; 
 }
 
-#contact input[type=text], [type=email], {
+#contact input[type=text], [type=email] {
     width: 80%;
     padding: 12px;
     border: 1px solid black;
@@ -301,6 +318,8 @@ input[type=submit]:hover {
 
 #privacy {
     text-align: left;
+    width: inherit;
+    padding: 10px 0px;
 } 
 /* removing underline of links */
  #link   {
@@ -315,6 +334,9 @@ input[type=submit]:hover {
 footer {
     position: fixed;
     bottom: 1px;
-    left: 20px;
+    padding: 20px;
     font-size: small;
+    background-color: #fff;
+    color: #717f91;
+    width: 100%;
 } 
